@@ -1,0 +1,5 @@
+converter:
+  basepath: "api"
+  host: "openexchangerates.org"
+  port: "443"
+
