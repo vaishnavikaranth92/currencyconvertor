@@ -31,6 +31,20 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.3.0</muleVersion>
+						<username>vaishnavi3_karanth</username>
+						<password>Januvaish94@</password>
+						<applicationName>currency-api-jenkins</applicationName>
+						<environment>Sandbox</environment>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
+						<objectStoreV2>true</objectStoreV2>
+						<properties>
+							<key>value</key>
+						</properties>
+					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		<plugin>
@@ -130,6 +144,10 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
+        <pluginRepository>
+        	<id>mule-public</id>
+        	<url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+        </pluginRepository>  
     </pluginRepositories>
 
 </project>
